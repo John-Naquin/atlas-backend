@@ -1,11 +1,15 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS  
 import openai
+import os
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 CORS(app)
 
-openai.api_key = 'You can not have my key!' 
+load_dotenv()
+
+openai.api_key = os.getenv('OPENAI_API_KEY', 'DefaultApiKeyIfNotSet')
 
 def chat_with_gpt(message):
     response = openai.ChatCompletion.create(
