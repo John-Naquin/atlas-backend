@@ -45,14 +45,14 @@ def chat():
     return jsonify({'response': response})
 
 @app.route('/chatmath', methods=['POST'])
-def chat():
+def chatmath():
     data = request.json
     message = data['message']
     response = chat_with_gpt_math(message)
     return jsonify({'response': response})
 
 @app.route('/chatwriting', methods=['POST'])
-def chat():
+def chatwriting():
     data = request.json
     message = data['message']
     response = chat_with_gpt_writing(message)
