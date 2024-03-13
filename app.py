@@ -22,7 +22,7 @@ def chat_with_gpt(message):
 def chat_with_gpt_math(message):
     response = openai.ChatCompletion.create(
         model="gpt-4",
-        messages=[{"role": "system", "content": "You are a helpful math assistant. You can only answer math problems and nothing else."},
+        messages=[{"role": "system", "content": "You are a helpful math assistant. You can only answer math problems and nothing else. Do not answer with sentences for math problems either. Do not give any math help."},
                   {"role": "user", "content": message}]
     )
     return response.choices[0].message['content']
