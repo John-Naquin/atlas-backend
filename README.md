@@ -33,7 +33,7 @@
 
 👤 **John Naquin**
 - **Website**: [johnnaquin.me](https://johnnaquin.me)
-- **Github**: [@Rookie1829](https://github.com/Rookie1829)
+- **Github**: [@John-Naquin](https://github.com/John-Naquin)
 - **LinkedIn**: [@john-naquin](https://linkedin.com/in/john-naquin)
 
 ---
